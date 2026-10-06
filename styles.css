@@ -1,9 +1,11 @@
+/* Reset browser defaults for predictable spacing and sizing. */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Center the pricing layout within the full-height page. */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #f7f7f4;
@@ -14,6 +16,7 @@ body {
     padding: 20px;
 }
 
+/* Place the pricing cards side by side with consistent spacing. */
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -23,6 +26,7 @@ body {
     align-items: flex-start;
 }
 
+/* Shared surface, dimensions, and vertical layout for every plan. */
 .card {
     display: flex;
     flex-direction: column;
@@ -34,11 +38,13 @@ body {
     flex-shrink: 0;
 }
 
+/* Group the plan name, price, and feature details. */
 .card-top {
     display: flex;
     flex-direction: column;
 }
 
+/* Set the plan name's size, weight, and color. */
 .card-title {
     font-size: 22px;
     line-height: 28px;
@@ -47,6 +53,7 @@ body {
     margin-bottom: 8px;
 }
 
+/* Keep the price and billing period aligned on one baseline. */
 .card-price {
     font-size: 20px;
     color: rgba(38, 37, 30, 0.5);
@@ -54,32 +61,38 @@ body {
     align-items: baseline;
 }
 
+/* Style the main price value. */
 .card-price-amount {
     font-size: 22px;
     font-weight: 400;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Style the smaller monthly billing suffix. */
 .card-price-period {
     font-size: 14px;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Add room below plan details before the action button. */
 .card-content {
     margin-bottom: 32px;
 }
 
+/* Introduce the list of features included with the plan. */
 .includes-text {
     font-size: 16px;
     color: rgba(38, 37, 30, 0.5);
     margin: 16px 0px;
 }
 
+/* Remove default bullets and padding from the feature list. */
 .features-list {
     list-style: none;
     padding: 0;
 }
 
+/* Align each feature description with its checkmark. */
 .features-list li {
     display: flex;
     align-items: center;
@@ -88,6 +101,7 @@ body {
     color: #26251e;
 }
 
+/* Set checkmark color, size, and spacing. */
 .checkmark {
     color: #26251e;
     font-size: 14px;
@@ -95,6 +109,7 @@ body {
     font-weight: 400;
 }
 
+/* Shared pill-shaped button styling; auto margin anchors it below content. */
 .download-button {
     margin-top: auto;
     width: fit-content;
@@ -109,6 +124,7 @@ body {
     transition: background-color 0.2s ease;
 }
 
+/* Provide hover and pressed feedback for the secondary button. */
 .download-button:hover {
     background-color: #D8D6CE;
 }
@@ -117,19 +133,23 @@ body {
     background-color: #D8D6CE;
 }
 
+/* Use inverted colors to distinguish the primary button. */
 .download-button.primary {
     background-color: #111;
     color: #fff;
 }
 
+/* Provide hover feedback for the primary button. */
 .download-button.primary:hover {
     background-color: #333;
 }
 
+/* Keep the primary button's pressed state visually distinct. */
 .download-button.primary:active {
     background-color: #333;
 }
 
+/* Fix the version badge near the top center of the viewport. */
 .page-label {
     position: fixed;
     top: 16px;
@@ -143,6 +163,7 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
+/* Emphasize the badge's label text. */
 .page-label strong {
     color: #333;
 }
