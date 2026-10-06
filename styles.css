@@ -1,4 +1,4 @@
-/* Normalize browser defaults so component sizing is predictable. */
+/* Reset browser defaults for predictable spacing and sizing. */
 * {
     margin: 0;
     padding: 0;
@@ -53,7 +53,7 @@ body {
     margin-bottom: 8px;
 }
 
-/* Align the price amount and billing period along their baselines. */
+/* Keep the price and billing period aligned on one baseline. */
 .card-price {
     font-size: 20px;
     color: rgba(38, 37, 30, 0.5);
@@ -144,6 +144,7 @@ body {
     background-color: #333;
 }
 
+/* Keep the primary button's pressed state visually distinct. */
 .download-button.primary:active {
     background-color: #333;
 }
